@@ -1092,6 +1092,9 @@ class MultiSafepay
     {
 
         $ip = $_SERVER['REMOTE_ADDR'];
+        if($ip == '::1') {
+            $ip = '127.0.0.1';
+        } 
         preg_match("/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/", $ip, $matches);
 
         $this->customer['ipaddress'] = $matches[0];

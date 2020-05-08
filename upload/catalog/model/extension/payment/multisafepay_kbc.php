@@ -21,7 +21,7 @@
  */
 class ModelExtensionPaymentMultiSafePayKbc extends Model
 {
-    const MAX_PAYMENT_METHOD_LENGTH = 128;
+    const MAX_PAYMENT_METHOD_LENGTH = 170;
 
     public function getMethod($address, $total)
     {
@@ -74,7 +74,7 @@ class ModelExtensionPaymentMultiSafePayKbc extends Model
             return $title;
         }
         $baseUrl = $this->request->server['HTTPS'] ? $this->config->get('config_ssl') : $this->config->get('config_url');
-        $logo = '<img height=32 src="' . $baseUrl . 'image/multisafepay/kbc.svg" alt="kbc"/>';
+        $logo = '<img height=32 src="' . $baseUrl . 'catalog/view/theme/default/image/multisafepay/kbc.svg" alt="kbc"/>';
         $titleWithLogo = $logo . '  ' . $title;
         if (mb_strlen($titleWithLogo) > self::MAX_PAYMENT_METHOD_LENGTH) {
             return $title;

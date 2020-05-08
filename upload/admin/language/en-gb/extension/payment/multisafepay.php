@@ -11,10 +11,10 @@
 
 // Heading
 $_['heading_title']     = 'MultiSafepay';
-$_['text_multisafepay'] = '<a onclick="window.open(\'http://www.multisafepay.com\');"><img height=40 width=auto src="../image/multisafepay/multisafepay.svg" alt="MultiSafepay" title="MultiSafepay"/></a>';
+$_['text_multisafepay'] = '<a onclick="window.open(\'http://www.multisafepay.com\');"><img height=40 width=auto src="view/image/payment/multisafepay/multisafepay.svg" alt="MultiSafepay" title="MultiSafepay"/></a>';
 
 // Text
-$_['text_multisafepay'] = '<a onclick="window.open(\'http://www.multisafepay.com\');"><img height=40 width=auto src="view/image/payment/multisafepay.svg" alt="MultiSafepay" title="MultiSafepay" style="border: 1px solid #EEEEEE;" /></a>';
+$_['text_multisafepay'] = '<a onclick="window.open(\'http://www.multisafepay.com\');"><img height=40 width=auto src="view/image/payment/multisafepay/multisafepay.svg" alt="MultiSafepay" title="MultiSafepay" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_edit']         = 'Edit the MultiSafepay Configuration';
 $_['text_all_zones']    = 'Geo zones';
 $_['text_payment']      = 'Payment';
