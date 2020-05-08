@@ -74,15 +74,7 @@ class ControllerExtensionPaymentMultiSafePay extends Controller
             $languages[$result['code']] = $result;
         }
 
-        $language_string = $languages[$this->session->data['language']]['locale'];
-
-        $loc1 = explode(',', $language_string);
-
-        if (!isset($loc1[1])) {
-            $locale = $loc1[0];
-        } else {
-            $locale = $loc1[1];
-        }
+        $locale = $this->language->get('code');
 
         if ($this->config->get('payment_multisafepay_account_type') != 'fastcheckout') {
 
@@ -456,11 +448,8 @@ class ControllerExtensionPaymentMultiSafePay extends Controller
                 $languages[$result['code']] = $result;
             }
 
-            $language_string = $languages[$this->session->data['language']]['locale'];
 
-            $loc1 = explode(',', $language_string);
-
-            $locale = $loc1[0];
+            $locale = $this->language->get('code');
 
             $msp->test = $this->config->get('payment_multisafepay_environment');
             $msp->merchant['account_id'] = $this->config->get('payment_multisafepay_merchant_id');
