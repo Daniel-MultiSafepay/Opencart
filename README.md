@@ -16,6 +16,7 @@ The supported Payment Methods & Giftcards for this plugin can be found over here
 ## Requirements
 - To use the plugin you need a MultiSafepay account. You can create a test account on https://testmerchant.multisafepay.com/signup
 - OpenCart 3.x
+- VqMod Installed
 
 ## Installation through SFTP
 1. Plugin_OpenCart_x.x.x.zip
